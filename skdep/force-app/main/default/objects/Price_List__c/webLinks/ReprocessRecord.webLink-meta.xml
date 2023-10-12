@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReprocessRecord</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>ReprocessRecord</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/31.0/connection.js&quot;)}
+
+var myquery = &quot;SELECT Id, Name, OnDemand__c,Latest_Update_Status__c FROM Price_List__c WHERE Id = &apos;{!Price_List__c.Id}&apos; limit 1&quot;;
+
+sforce.connection.sessionId = &quot;{!$Api.Session_ID}&quot;;
+result = sforce.connection.query(myquery);
+records = result.getArray(&quot;records&quot;);
+
+var myObject = records[0];
+var updateRecord = new Array();
+
+myObject.Latest_Update_Status__c = &apos;Open&apos;;
+myObject.OnDemand__c=false;
+updateRecord.push(myObject);
+
+result = sforce.connection.update(updateRecord);
+
+if(result[0].getBoolean(&quot;success&quot;)){
+window.location = &quot;/&quot; + &quot;{!Price_List__c.Id}&quot;;
+}else{
+alert(&apos;Could not Trigger Process: &apos;+result);
+}</url>
+</WebLink>

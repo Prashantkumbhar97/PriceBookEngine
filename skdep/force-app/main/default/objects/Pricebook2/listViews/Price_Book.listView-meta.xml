@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_Book</fullName>
+    <columns>PRICEBOOK2.NAME</columns>
+    <columns>Customer__c</columns>
+    <columns>Customer_Group__c</columns>
+    <columns>PRICEBOOK2.DESCRIPTION</columns>
+    <columns>PRICEBOOK2.IS_ACTIVE</columns>
+    <columns>IsDiscount__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Price Book</label>
+    <language>en_US</language>
+</ListView>

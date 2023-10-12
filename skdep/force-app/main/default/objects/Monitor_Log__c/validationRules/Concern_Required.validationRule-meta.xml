@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concern_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Status__c ==true, Concern__c ==false)</errorConditionFormula>
+    <errorMessage>Please Check Concern Checkbox</errorMessage>
+</ValidationRule>

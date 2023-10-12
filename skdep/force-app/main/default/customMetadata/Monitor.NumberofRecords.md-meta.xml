@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>NumberofRecords</label>
+    <protected>false</protected>
+    <values>
+        <field>All_Module__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Concern__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Email__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Enable_Notification__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Except_Module_Log__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Header__c</field>
+        <value xsi:type="xsd:string">Id,Name,ApexClass,Concern,ConcernPerson,DateTime,ErrorMessage,ExceptModuleLog,KeeplogforlastXdays,LogginUser,LoggingType,Module,Notification,NotificationEmail,PurgedfileName,PurgedStatus,PurgingMode,PurgingSchedule,RecordType,RecordId,RequestJSON,ResponseJSON,ScheduleJobId,StatusCode,TypeOfIntegration,Method,RequestURL,RemoteAddress,Headers,DataSource,ExternalSystemName,TermsCondition,Status</value>
+    </values>
+    <values>
+        <field>Keep_log_for_last_X_days__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Notification_Email_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>NumberOfRows__c</field>
+        <value xsi:type="xsd:string">Id,Name,Apex_Class__c,Concern__c,Concern_Person__c,Date_Time__c,Error_Message__c,Except_Module_Log__c,Keep_log_for_last_X_days__c,Loggin_User__c,Logging_Type__c,Module__c,Notification__c,Notification_Email__c,Purged_file_Name__c,Purged_Status__c,Purging_Mode__c,Purging_Schedule__c,Record_Type__c,RecordId__c,Request_JSON__c,Response_JSON__c,Schedule_Job_Id__c,Status_Code__c,Type_Of_Integration__c,Method__c,Request_URL__c,Remote_Address__c,Headers__c,Data_Source__c,External_System_Name__c,Terms_Condition__c,Status__c</value>
+    </values>
+    <values>
+        <field>Purged_file_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Purging_Mode__c</field>
+        <value xsi:type="xsd:string">Auto</value>
+    </values>
+    <values>
+        <field>Purging_Schedule__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Schedule_Job_Id__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Status__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Terms_Condition__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

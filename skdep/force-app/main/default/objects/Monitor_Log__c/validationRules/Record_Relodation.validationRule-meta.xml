@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Relodation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(PRIORVALUE(ReloadStatus__c), &apos;Completed&apos;),
+  ISCHANGED(ReloadStatus__c) 
+)</errorConditionFormula>
+    <errorMessage>Please Contact Your System Administrator records are already reloaded.</errorMessage>
+</ValidationRule>
